@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Buy</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  <!-- for icons -->
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="VisionMArt1.png" alt="VisionMart Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+             <li><a href="buy.html">Buy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products">
+            <button>Search</button>
+        </div>
+    </div>
+    <div class="buy">
+    <main>
+
+        <h1>Buy Product</h1>
+        <form id="buyForm">
+            <fieldset >
+                <legend>Personal Information</legend>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <div class="inline-fields">
+                    <label for="phoneNumber">Phone Number:</label>
+                <select id="countryCode" name="countryCode" width="50px">
+                    <option value="+1">+1</option>
+                    <option value="+91">+91</option>
+                    <option value="+44">+44</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required style="width: 200px;"> 
+                </div> 
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="usa">USA</option>
+                    <option value="india">India</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                    <!-- Add more country options as needed -->
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Delivery Address</legend>
+                <label for="streetName">Street Name:</label>
+                <input type="text" id="streetName" name="streetName" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="district">District:</label>
+                <input type="text" id="district" name="district" required>
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Product Details</legend>
+                <label for="numProducts">Number of Products:</label>
+                <input type="number" id="numProducts" name="numProducts" min="1" required>
+
+                <label for="productDescription">Product Description:</label>
+                <textarea id="productDescription" name="productDescription" required></textarea>
+
+                <div class="inline-fields">
+
+                    <label for="productPrice">Product Price:</label>
+                    <input type="text" id="productPrice" name="productPrice" required>
+
+                    <label for="orderId">Order ID:</label>
+                    <input type="text" id="orderId" name="orderId" required>
+                </div>
+            </fieldset>
+
+             <button type="button" onclick="window.location.href='payment.html';"><span>Submit</span></button>
+
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VisionMart. All rights reserved.</p>
+        <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="return-policy.html">Return Policy</a></li>
+        </ul>
+    </footer>
+
+    <!-- music button -->
+    <button id="music-button">
+        <i class="fa fa-music"></i>
+    </button>
+
+    <audio id="audio" loop>
+        <source src="images/moonlight-sonata.mp3" type="audio/mpeg"> not support .
+    </audio>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
