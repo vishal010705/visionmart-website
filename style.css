@@ -610,27 +610,3 @@ footer ul li a {
 }
 
 
-#music-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #007bff; /* Default color */
-    color: white;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#music-button:hover {
-    background-color: #28a745; /* when inactive*/
-}
-
-#music-button.active {
-    background-color: #0056b3; /* Color when active (playing) */
-}
